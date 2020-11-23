@@ -4,10 +4,10 @@ python does not require compiling however the script requires input from the com
 ```cat {file}.txt | python main.py```
 
 ## Part I
-- 50 nodes: 500 edges, 10 new colors and max degree of 27
+- 50 nodes: 100 edges, 4 new colors and max degree of 7
 - 100 nodes: 500 edges, 6 new colors and a max degree of 22
 - 500 nodes: 1000 edges, 5 new colors and a max degree of 5
-- 1000 nodes: 50000 edges, 29 new colors and a max degree of 129
+- 1000 nodes: 5000 edges, 9 new colors and a max degree of 29
 
 ## Part II
 - there was an additional 3 new colors that were added where the colors respective to the colors underneath each
