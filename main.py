@@ -76,7 +76,6 @@ def main():
 
     for value in retval.values():
         print(value)
-        print(" ")
 
 
 if __name__ == "__main__":
