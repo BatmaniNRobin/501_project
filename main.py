@@ -16,7 +16,7 @@ import collections
 from collections import defaultdict
 
 
-# colors the map to solve sudoku
+# colors the map to solve sudoku using welsh-powell algorithm
 def welsh_powell(graph, mapOfColors):
 
     #sort the values in descending order and color the map accordingly (most neighbors ... least neighbors)
@@ -33,10 +33,13 @@ def welsh_powell(graph, mapOfColors):
 # main function
 def main():
     # read input and parse it into nodes and edges via spacing delimiter
-    numNodes, numEdges = list(map(int, input().strip().split(" ")))
-    edges = [tuple(map(int, input().strip().split(" "))) for index in range(numEdges)]
+    nodesList, edgesList = list(map(int, input().strip().split(" ")))
+
+    edges = [tuple(map(int, input().strip().split(" "))) for index in range(edgesList)]
+
     colors = list(map(int, input().strip().split(" ")))
 
+    # dict but if something has no key it gets assigned one anyways
     graph = defaultdict(list)
 
     for edge in edges:
@@ -46,7 +49,9 @@ def main():
         graph[source].append(dest)
         graph[dest].append(source)
     
+
     mapOfColors = {}
+
     for i, color in enumerate(colors):
         mapOfColors[i] = color
 
