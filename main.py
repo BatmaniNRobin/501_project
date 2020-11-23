@@ -13,6 +13,7 @@
 
 import sys
 import collections
+from collections import defaultdict
 
 
 # colors the map to solve sudoku
@@ -33,8 +34,8 @@ def welsh_powell(graph, mapOfColors):
 def main():
     # read input and parse it into nodes and edges via spacing delimiter
     numNodes, numEdges = list(map(int, input().strip().split(" ")))
-    edges = [tuple(map(int, input().strip.split(" "))) for index in range(numEdges)]
-    colors = list(map(int, input().strip.split(" ")))
+    edges = [tuple(map(int, input().strip().split(" "))) for index in range(numEdges)]
+    colors = list(map(int, input().strip().split(" ")))
 
     graph = defaultdict(list)
 
@@ -68,7 +69,7 @@ def main():
     
     print(additional_colors)
 
-    for value in solution.values():
+    for value in retval.values():
         print(value)
         print(" ")
 
