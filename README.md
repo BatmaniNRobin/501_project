@@ -1,6 +1,6 @@
 # 501_project
 
-python does not require compiling however the script requires inout from the command line:
+python does not require compiling however the script requires input from the command line:
 ```cat {file}.txt | python main.py```
 
 ## Part I
@@ -10,4 +10,4 @@ python does not require compiling however the script requires inout from the com
 - 1000 nodes: 50000 edges, 29 new colors and a max degree of 129
 
 ## Part II
-there was an additional 3 new colors that were added where the colors respective to the colors underneath each
+- there was an additional 3 new colors that were added where the colors respective to the colors underneath each
