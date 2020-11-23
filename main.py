@@ -19,7 +19,7 @@ import collections
 def welsh_powell(graph, mapOfColors):
 
     #sort the values in descending order and color the map accordingly (most neighbors ... least neighbors)
-    vertices = sorted(graph, key=lamda x: len(graph[x]), reverse=True):
+    vertices = sorted(graph, key=lambda x: len(graph[x]), reverse=True)
 
     for vertex in vertices:
         # check to see if node has been visited or not, if it has not then color the graph
